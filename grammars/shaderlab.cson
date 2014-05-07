@@ -1,0 +1,49 @@
+'scopeName': 'source.shaderlab'
+'name': 'ShaderLab'
+'fileTypes': [
+    'shader'
+]
+'patterns': [
+    {
+        'match': '\\b(Shader|Properties|Category|SubShader|Tags|Pass)\\b'
+        'name': 'entity.name.section.shaderlab'
+    }
+    {
+        'match': '\\b(CGPROGRAM|ENDCG)\\b'
+        'name': 'entity.name.tag.shaderlab'
+    }
+    {
+        'match': '\\b(Dependency|Fallback)\\b'
+        'name': 'variable.parameter.shaderlab'
+    }
+    {
+        'match': '\\b(Albedo|Normal|Emission|Specular|Gloss|Alpha)\\b'
+        'name': 'variable.parameter.shaderlab'
+    }
+    {
+        'match': '\\b(appdata_base|appdata_tan|appdata_full|SurfaceOutput)\\b'
+        'name': 'variable.parameter.shaderlab'
+    }
+    {
+        'match': '\\b((uv)*(2)*\\_\\w+|viewDir|COLOR|screenPos|worldPos|worldRefl|worldNormal|worldRefl|worldNormal)\\b'
+        'name': 'variable.parameter.shaderlab'
+    }
+    {
+        'match': '\\b(UNITY_MATRIX_MVP|UNITY_MATRIX_MV|UNITY_MATRIX_V|UNITY_MATRIX_P|UNITY_MATRIX_VP|UNITY_MATRIX_T_MV|UNITY_MATRIX_IT_MV|UNITY_MATRIX_TEXTURE0|UNITY_MATRIX_TEXTURE1|UNITY_MATRIX_TEXTURE2|UNITY_MATRIX_TEXTURE3|_Object2World|_World2Object|_WorldSpaceCameraPos|unity_Scale|_ModelLightColor|_SpecularLightColor|_ObjectSpaceLightPos|_Light2World|_World2Light|_Object2Light)\\b'
+        'name': 'variable.language.shaderlab'
+    }
+    {
+        'match': '\\b(_Time|_SinTime|_CosTime|unity_DeltaTime|_ProjectionParams|_ScreenParams)\\b'
+        'name': 'constant.numeric.shaderlab'
+    }
+    {
+        'match': '\\[HideInInspector\\]'
+        'name': 'keyword.shaderlab'
+    }
+    {
+        'include': 'source.c'
+    }
+    {
+        'include': 'source.cg'
+    }
+]
