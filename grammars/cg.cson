@@ -1,0 +1,22 @@
+'scopeName': 'source.cg'
+'name': 'Cg'
+'fileTypes': [
+    'cg'
+]
+'patterns': [
+    {
+        'match': '\\#(.)*'
+        'name': 'entity.name.tag.cg'
+    }
+    {
+        'match': '\\b(const|extern|in|inline|inout|static|out|uniform|varying|profile name)\\b'
+        'name': 'storage.declaration.specifier.cg'
+    }
+    {
+        'match': '\\b(double([1-4])*(x[1-4])*|float([1-4])*(x[1-4])*|half([1-4])*(x[1-4])*|fixed([1-4])*(x[1-4])*|long([1-4])*(x[1-4])*|int([1-4])*(x[1-4])*|short([1-4])*(x[1-4])*|char([1-4])*(x[1-4])*|bool([1-4])*(x[1-4])*|sampler([1-3]D|RECT|CUBE)*)\\b'
+        'name': 'storage.type.cg'
+    }
+    {
+        'include': 'source.c'
+    }
+]
