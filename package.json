@@ -1,6 +1,6 @@
 {
   "name": "language-unity-shaderlab",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Atom language support for Unity ShaderLab",
   "repository": "https://github.com/teddybradford/language-unity-shaderlab",
   "license": "MIT",
